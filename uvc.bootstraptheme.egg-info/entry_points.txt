@@ -1,0 +1,6 @@
+[fanstatic.libraries]
+uvc.bootstraptheme = uvc.bootstraptheme.resources:library
+
+[z3c.autoinclude.plugin]
+target=uvcsite
+

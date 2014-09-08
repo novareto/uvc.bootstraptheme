@@ -1,0 +1,10 @@
+<ul id="personalmenu" class="pull-right nav navbar-nav">
+  <li class="dropdown">
+  <a id="drop" data-toggle="dropdown" class="dropdown-toggle" role="button" href="#"><span tal:content="manager.title"></span><b class="caret"></b></a>
+  <ul class="dropdown-menu" role="menu" aria-labelledby="drop">
+    <li tal:repeat="menu manager.entries">
+    <span tal:replace="structure menu.render()"> </span>
+    </li>
+  </ul>
+  </li>
+</ul>

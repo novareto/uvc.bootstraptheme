@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    <title tal:content="layout.title" />
+
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  </head>
+
+  <body>
+
+    <div class="mainnavigation" tal:content="structure slot:uvc-mainnav" />
+
+    <div class="container" id="maincontent">
+
+      <div id="uvc-above-body" tal:content="structure slot:uvc-above-body" />
+      <div id="uvc-main-body" class="container" tal:content="structure content" />
+      <div id="uvc-below-body" tal:content="structure slot:uvc-below-body" />
+
+    </div>
+
+  </body>
+</html>

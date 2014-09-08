@@ -1,0 +1,7 @@
+<ul id="globalmenu" class="navbar-nav">
+  <ul class="nav navbar-nav">
+    <li tal:repeat="menu manager.gmentries">
+    <span tal:replace="structure menu.render()"> </span>
+    </li>
+  </ul>
+</ul>
