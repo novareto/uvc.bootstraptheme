@@ -1,5 +1,6 @@
 README.txt
 setup.py
+docs/HISTORY.txt
 uvc/__init__.py
 uvc.bootstraptheme.egg-info/PKG-INFO
 uvc.bootstraptheme.egg-info/SOURCES.txt
@@ -9,8 +10,19 @@ uvc.bootstraptheme.egg-info/namespace_packages.txt
 uvc.bootstraptheme.egg-info/not-zip-safe
 uvc.bootstraptheme.egg-info/requires.txt
 uvc.bootstraptheme.egg-info/top_level.txt
+uvc/bootstraptheme/README.txt
 uvc/bootstraptheme/__init__.py
+uvc/bootstraptheme/configure.zcml
 uvc/bootstraptheme/form.py
+uvc/bootstraptheme/ftesting.zcml
 uvc/bootstraptheme/layout.py
 uvc/bootstraptheme/resources.py
 uvc/bootstraptheme/viewlets.py
+uvc/bootstraptheme/static/main.css
+uvc/bootstraptheme/templates/flashmessage.cpt
+uvc/bootstraptheme/templates/form.cpt
+uvc/bootstraptheme/templates/globalmenu.cpt
+uvc/bootstraptheme/templates/globalnav.cpt
+uvc/bootstraptheme/templates/layout.cpt
+uvc/bootstraptheme/templates/personalmenu.cpt
+uvc/bootstraptheme/templates/submenu.cpt

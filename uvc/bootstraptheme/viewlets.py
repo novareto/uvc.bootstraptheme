@@ -66,6 +66,6 @@ class FlashMessages(uvclight.Viewlet):
 
     def update(self):
         messages = receive(None)
-        if messages
+        if messages:
             self.messages = [msg for msg in receive(None)]
         return []
