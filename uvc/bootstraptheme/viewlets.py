@@ -65,4 +65,7 @@ class FlashMessages(uvclight.Viewlet):
     template = uvclight.get_template('flashmessage.cpt', __file__)
 
     def update(self):
-        self.messages = [msg for msg in receive(None)]
+        messages = receive(None)
+        if messages
+            self.messages = [msg for msg in receive(None)]
+        return []
