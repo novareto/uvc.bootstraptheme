@@ -68,4 +68,5 @@ class FlashMessages(uvclight.Viewlet):
         messages = receive(None)
         if messages:
             self.messages = [msg for msg in receive(None)]
-        return []
+        else:
+            self.messages = []
