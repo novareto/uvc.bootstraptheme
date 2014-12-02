@@ -15,7 +15,7 @@ class Layout(uvclight.Layout):
         main_css.need()
 #        main_js.need()
         if 'view' in ns:
-            self.title = getattr(ns['view'], 'title', u'Fernlehrgang')
+            self.title = getattr(ns['view'], 'title', u'KUVB')
         else:
             self.title = u'Fernlehrgang'
         return uvclight.Layout.__call__(self, content, **ns)

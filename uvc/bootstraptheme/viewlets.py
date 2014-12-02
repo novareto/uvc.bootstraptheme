@@ -9,6 +9,7 @@ from zope.component import getAdapters
 from zope.component import getMultiAdapter
 from uvc.design.canvas.managers import IAboveContent
 from dolmen.viewlet.interfaces import IViewletManager
+from uvc.design.canvas import ISubMenu
 
 
 class MainNavigation(uvclight.ViewletManager):
@@ -46,7 +47,7 @@ class GlobalNav(uvclight.Viewlet):
         self.submenus = list()
         submenus = getAdapters(
             (self.context, self.request, self.view, self.globalmenu),
-            uvclight.interfaces.ISubMenu)
+            ISubMenu)
         for name, submenu in submenus:
             submenu.update()
             submenu.template = uvclight.get_template(
