@@ -7,7 +7,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#"> <span tal:content="viewlet.title"/> </a>
+      <a class="navbar-brand" href="#" tal:attributes="href view.application_url()"> <span tal:content="viewlet.title"/> </a>
     </div>
     <div class="collapse navbar-collapse">
       <div tal:replace="structure viewlet.globalmenu.render()"> </div>
