@@ -26,5 +26,7 @@
 
     </div>
 
+   <div tal:content="structure slot:uvc-footer"/> 
+
   </body>
 </html>
