@@ -20,7 +20,7 @@
 
     <div class="container" id="maincontent">
 
-      <div id="uvc-above-body" class="row" tal:content="structure slot:uvc-above-body" />
+      <div id="uvc-above-body" tal:content="structure slot:uvc-above-body" />
       <div id="uvc-main-body" class="container" tal:content="structure content" />
       <div id="uvc-below-body" tal:content="structure slot:uvc-below-body" />
 

@@ -1,4 +1,47 @@
 @import               "node_modules/bootstrap/less/bootstrap.less";
 
-
 @icon-font-path: "./node_modules/bootstrap/fonts/";
+
+@blue:                  #004994; //Blau DGUV
+@blueLighter:           #e2eef8; // Blau hell Hintergrund
+@blueLighterhover:      #f1f9fd; // Blau hell Kontrast für Hover
+@bluehover:             #0099cc; // Blau selected BGETEM
+@white:                 #FFF;
+@font:                  #333;
+@fontLighter:           #9a9a9a;
+@portlet-font:          #424242;
+@footer-font:           #666;
+@gruen:                 #51ae31; // DGUV Gruen
+@red:                   #d40f14;
+
+
+@navbar-inverse-bg:                         @blue;
+@navbar-inverse-border:                     darken(@navbar-inverse-bg, 10%);
+@brand-primary:                             @blue;
+
+.glyphicon-circle-arrow-left:before,
+.glyphicon-circle-arrow-right:before {
+    font-size: 21px;
+    vertical-align:middle;
+}
+#personalmenu {background-color:@gruen;}
+.navbar-inverse .navbar-nav > .open > a {background-color:darken(@gruen, 6.5%) !important;}
+@media (max-width: 767px) {
+.tabbable.responsive .nav-tabs > li > a.tab-control.right, 
+.tabbable.responsive .nav-tabs > li > span.tab-control-spacer.right {
+    float:none;
+    } 
+.tabbable .nav-tabs > li span,
+.tabbable .nav-tabs > li.active,
+.tabbable .nav-tabs > li a {
+    white-space: nowrap;
+    }
+.list-unstyled li a {line-height:2.2em;}
+.table-responsive:before {
+    padding: 2px 5px;
+    content: "Weiterlesen, nach rechts scrollen";
+    color: #fff;
+    background: @gruen;
+    }
+.form-control {height:auto;}
+}
