@@ -24,7 +24,10 @@ class GlobalNav(uvclight.Viewlet):
 
     @property
     def title(self):
-        return uvclight.getSite().title
+        site = uvclight.getSite()
+        if site is not None:
+            return site.title
+        return u'Navigation'
 
     def update(self):
         self.gmentries = []

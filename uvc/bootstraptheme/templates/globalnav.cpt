@@ -13,11 +13,6 @@
       <div tal:replace="structure viewlet.globalmenu.render()"> </div>
       <div tal:replace="structure viewlet.personalmenu.render()"> </div> 
     </div>
-    <div class="visible-xs">
-      <div class="collapse navbar-collapse" id="pm">
-        <ul class="nav navbar-nav pull-right" tal:content="structure viewlet.macroPM"> </ul>  
-      </div>
-    </div>
   </div>
 </div>
 
